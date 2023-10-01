@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa" id="Dhtml" class="dark-mode" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dora Bagz, Dora bag, دورا, دورا بگز, Dora"/>
+    <meta name="description" content="Dora Bagz is a startup exclusively selling variety type of bags and it was founded by Donya Arefi"/>
+    <meta name="author" content="unixnexo, Eilliya"/>
+    <!-------------------------------------- Titile bar --------------------------------------->
+    <title>Dora Bagz | Dashboard</title>
+    <link rel="shortcut icon" href="img/1.jpg"/>
+    <!-------------------------------------- CSS3 --------------------------------------->
+    <!-- Some related css from the main css file -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- the new css file only for navSide -->
+    <link rel="stylesheet" type="text/css" href="navSide.css"/>
+    <!-------------------------------------- Bootstrap5 --------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body class="dark-mode" id="Dbody">
+    <div class="container-fluid px-0">
+        <div class="row">
+
+            <div class="col-2 px-0">
+                <!-- right side nav bar -->
+                <aside>
+                    <nav id="side-nav" class ="navbar navbar-dark">
+                        <ul class ="nav navbar-nav mx-auto p-3">
+
+                        <li class ="nav-item">
+                        <a class ="nav-link" href="dashboardAdmin_products.html"> محصولات </a>
+                        </li>
+                        <li class ="nav-item">
+                        <a class ="nav-link" href="#"> کاربران </a>
+                        </li>
+                        <li class ="nav-item">
+                        <a class ="nav-link" href="#"> صحفه اصلی </a>
+                        </li>
+                        <li class ="nav-item">
+                        <a class ="nav-link" href="#">  فروشگاه </a>
+                        </li>
+                        <li class ="nav-item">
+                        <hr/>
+                        <a class ="nav-link d-inline-block" href="#"> خروج </a>
+                        <img src="img/8.png" alt="Log out icon"/>
+                        <span>|</span>
+                        <img src="img/9.png" class="nav-link d-inline-block" alt="Icon for Light/Dark Mode" title="By icons8" onclick="lightMode()"/>
+                        </li>
+                        
+
+                    </ul>
+                    </nav>
+                </aside>
+            </div>
+
+            <main class="col-10">
+                <div id="main-contents-div" class="text-center">
+                    <div class="card bg-primary text-white mt-5 col-md-4 col-12 d-inline-block">
+                        <div class="card-body">0 | محصول</div>
+                    </div>
+                    <div class="card bg-primary text-white mt-5 col-md-4 col-12 d-inline-block">
+                        <div class="card-body">0 | کاربر</div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="card bg-warning text-white mt-5 col-md-3 col-12 d-inline-block">
+                        <div class="card-body">0 | خرید موفق</div>
+                    </div>
+                    <div class="card bg-success text-white mt-5 col-md-3 col-12 d-inline-block">
+                        <div class="card-body">0 | کامل شده</div>
+                    </div>
+                    <div class="card bg-danger text-white mt-5 col-md-3 col-12 d-inline-block">
+                        <div class="card-body">0  | در انتظار تایید</div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

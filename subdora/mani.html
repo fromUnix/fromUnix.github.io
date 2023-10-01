@@ -1,0 +1,340 @@
+<!-- Started in December 30th, 2022 -->
+<!DOCTYPE html>
+<html lang="fa" id="html" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dora Bagz, Dora bag, دورا, دورا بگز, Dora"/>
+    <meta name="description" content="Dora Bagz is a startup exclusively selling variety type of bags and it was founded by Donya Arefi"/>
+    <meta name="author" content="unixnexo, Eilliya"/>
+    <!-------------------------------------- Titile bar --------------------------------------->
+    <title>Dora Bagz</title>
+    <link rel="shortcut icon" href="img/1.jpg"/>
+    <!-------------------------------------- CSS3 --------------------------------------->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-------------------------------------- Bootstrap5 --------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-------------------------------------- jquery --------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-------------------------------------- vov.css animation library --------------------------------------->
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
+
+</head>
+<body id="body" class="dark-mode">
+      <header class="fixed-top">
+    <!-------------------------------------- Navbar --------------------------------------->
+        <nav id="nav" class="navbar dark-mode text-danger">
+            <div class="container-fluid">
+
+            <!-- Typing Effect -->
+            <div id="con">
+                <a id="type_effect" class="navbar-brand" href="#">D<span id="purple-span">o</span>ra <span id="purple-span">B</span>ag<span id="purple-span">z</span></a>
+            </div>
+
+            <!-- Centered Items -->
+              <ul class="navbar-nav d-inline-block mx-auto d-none d-lg-inline-block" dir="rtl">
+                <li class="nav-item">
+                    <a id="nav-li-a" class="nav-link" aria-current="page" href="#">بلاگ</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-li-a" class="nav-link" aria-current="page" href="shop.html">فروشگاه</a>
+                </li>
+                <li class="nav-item">
+                  <a id="nav-li-a" class="nav-link" aria-current="page" href="#about-us-div">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                  <a id="nav-li-a" class="nav-link" aria-current="page" href="#contact-us-first-div">ارتباط با ما</a>
+                </li>
+              </ul>
+
+              <!-- Right Side Items -->
+              <ul class="navbar-nav d-inline-block d-none d-lg-inline-block">
+                <!-- Dropdown menu for socials on big screen -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" aria-expanded="false"  id="dropdownMenuOffset" data-bs-toggle="dropdown"> ... </a>
+                  <ul class="dropdown-menu dropdown-menu-end text-end dark-mode position-absolute mx-auto text-center" id="dropdown-menu">
+                    <li class="nav-item">
+                    <a href="" target="_blank">
+                        <img class="dark-mode p-1 rounded-circle" src="img/5.png" alt="Instagram Icon"/>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" target="_blank">
+                        <img class="dark-mode p-1 rounded-circle" src="img/6.png" alt="Telegram Icon"/>
+                    </a>
+                </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="" data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        <img class="dark-mode p-1 rounded-circle" src="img/3.png" alt="User Icon"/>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="">
+                        <img class="dark-mode p-1 rounded-circle" src="img/2.png" alt="Bag Icon"/>
+                    </a>
+                </li>
+              </ul>
+
+
+              <!-- On small screens -->
+              <li class="nav-item dropdown d-block d-lg-none">
+                <a class="nav-link" href="#" aria-expanded="false"  id="dropdownMenuOffset" data-bs-toggle="dropdown"> ... </a>
+                <ul class="dropdown-menu dropdown-menu-end text-end dark-mode" id="dropdown-menu">
+                  <li><a class="dropdown-item" id="nav-li-a" href="">بلاگ</a></li>
+                  <li><a class="dropdown-item" id="nav-li-a" href="">فروشگاه</a></li>
+                  <li><a class="dropdown-item" id="nav-li-a" href="#about-us-div">درباره ما</a></li>
+                  <li><a class="dropdown-item" id="nav-li-a" href="#contact-us-first-div">ارتباط با ما</a></li>
+                  <div class="dropdown-divider bg-white"></div>
+                  <li>
+                    <a class="dropdown-item" href="">
+                    <a href="">
+                      <img class="dark-mode p-1 rounded-circle" src="img/2.png" alt="Bag Icon"/>
+                    </a>
+                    <a href="" data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                      <img class="dark-mode p-1 rounded-circle" src="img/3.png" alt="User Icon"/>
+                    </a>
+                    <br/>
+                    <a href="" target="_blank">
+                        <img class="dark-mode p-1 rounded-circle" src="img/5.png" alt="Instagram Icon"/>
+                    </a>
+                    <a href="" target="_blank">
+                        <img class="dark-mode p-1 rounded-circle" src="img/6.png" alt="Telegram Icon"/>
+                    </a>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+            </div>
+          </nav>
+    </header>
+        <!-------------------------------------- Main --------------------------------------->
+        <main id="main">
+            <!-- Carousel - Image Gallery -->
+            <div class="container-fluid px-0">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/2.jpg" class="d-block w-100" alt="Photos of bags">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="Photos of bags">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/4.jpg" class="d-block w-100" alt="Photos of bags">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- pic vs pic -->
+            <div class="container-fluid px-0 mt-2">
+              <h2 class="text-center p-2" dir="rtl">
+                برای هر
+                <span id="animate-charcter">سلیقه ای!</span>
+              </h2>
+              <div class="gallery">
+                <img src="img/5.jpg" alt="Bags photos">
+                <img src="img/6.jpg" alt="Bags photos">
+              </div>
+            </div>
+
+            <!-- about us -->
+            <div id="about-us-div" class="container-fluid px-0 mt-5 p-5">
+              <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <div id="about-us-text" class="card-about-us mx-auto" dir="rtl">
+                    <h3>درباره برند</h3>
+                    <p>
+                      برند دورا کار خودشو از سال 1400 شروع کرد.
+
+                      این برند به وارد کردن کیف های با کیفیت عالی اقدام کرده و تاثیر بسزایی در رشد و نمود تیپ افراد داشته.!
+                    </p>
+                    <span class="topB"></span>
+                    <span class="rightB"></span>
+                    <span class="bottomB"></span>
+                    <span class="leftB"></span>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 mt-5 mt-md-3">
+                  <img id="about-us-img" class="img-fluid mx-auto d-block" src="img/1.jpg" alt="Dora Bagz Logo"/>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- contact us -->
+            <div id="contact-us-first-div" class="container-fluid px-0 mt-5">
+              <div class="row">
+                <div class="block col-12"></div>
+              </div>
+            </div>
+
+            <div class="container px-0 mt-5 p-5" dir="rtl">
+              <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <p class="text-center">برای ارتباط با ادمین برند</p>
+                  <p class="text-center">- اینستاگرام: <a class="links-all" href="">Dora.Baz</a></p>
+                  <p class="text-center">- تلگرام: <a class="links-all" href="" dir="ltr">@DoraBaz</a></p>
+                </div>
+
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
+                  <p class="text-center">برای ارتباط با ادمین سایت</p>
+                  <p class="text-center" dir="ltr">- unixnexo: <a class="links-all" href="">unixnexo.github.io</a></p>
+                  <!-- <p class="text-center" dir="ltr">- Eilliya: <a class="links-all" href="">باغ وحشت دولت اباد</a></p> -->
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="container-fluid px-0 mt-5">
+              <div class="row">
+                <div class="block col-12"></div>
+              </div>
+            </div>
+
+        </main>
+
+        <!-------------------------------------- Footer --------------------------------------->
+    <footer>
+    
+      <!-- copy rights -->
+      <div id="footer-div" class="container-fluid px-0 mt-3">
+        <p class="p-3 text-center">All rights are reserved 2023&#169;&#169;&#8482;</p>
+      </div>
+
+      <!-- go to top -->
+      <div id="go-top-div" class="container-fluid fixed-bottom">
+            <a id="a-go-top" class="position-absolute bottom-0 end-0 text-white rounded-start p-2 vov slide-in-right" href="#main">&#8593;</a>
+      </div>
+
+      <!-- Mode changer -->
+        <div class="container-fluid fixed-bottom">
+            <img src="img/4.png" class="mb-3" alt="Icon for Light/Dark Mode" title="By icons8" onclick="lightMode()"/>
+        </div>
+
+    </footer>
+
+    <!-------------------------------------- Modals --------------------------------------->
+
+    <!-- Log in modal -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+
+        <div id="modal-contenttext" class="modal-content text-end dark-mode" dir="rtl">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">ورود</h5>
+            <div>
+                <button id="btn-form" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            </div>
+            <div class="modal-body">
+
+                <!-- Log in form -->
+                <form>
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">یوزرنیم یا ایمیلت</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="ایمیل ..." required>
+                      <div id="emailHelp" class="form-text">جان ایلیا ایمیلتو به کسی نمیدیم</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">پسوردت</label>
+                      <input type="password" class="form-control" id="InputPassword1" placeholder="پسورد ..." required>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">منو یادت نرها!</label>
+                    </div>
+                    <button id="btn-form" type="submit" class="btn">اجازه بده بیام تو</button>
+                  </form>
+
+            </div>
+            <div class="modal-footer">
+                <p>اگه هنوز فرشته بت رو نکردهو اکانت نساختی
+                  <a id="form-links-a" href="#" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">اینجا بساز</a>
+                </p>
+
+                <p>رمزتو یادت رفته ماهی گلی؟
+                  <a id="form-links-a" href="">بیا ثابت کن که یادت رفته</a>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Register modal -->
+      <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+
+        <div id="modal-contenttext" class="modal-content text-end dark-mode" dir="rtl">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">ساخت اکانت</h5>
+            <div>
+                <button id="btn-form" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            </div>
+            <div class="modal-body">
+
+                <!-- Register form -->
+                <form>
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">ایمیلت</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="ایمیل ..." required>
+                      <div id="emailHelp" class="form-text">الکی ملکی بزنی میام پیدات میکنم</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputUsername1" class="form-label">یه اسمی برا خودت بزار</label>
+                        <input type="text" class="form-control" id="InputUsername1" aria-describedby="usernameHelp" placeholder="یوزرنیم ..." required>
+                        <div id="usernameHelp" class="form-text">یوقت فوشی چیزی نزاریا</div>
+                      </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">پسورد</label>
+                      <input type="password" class="form-control" id="InputPassword1" placeholder="پسورد ..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword2" class="form-label">یه بار دیگه پسورد</label>
+                        <input type="password" class="form-control" id="InputPassword2" placeholder="تکرار پسورد ..." required>
+                      </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">منو یادت نرها!</label>
+                    </div>
+                    <button id="btn-form" type="submit" class="btn">منو وارد بهشت کن</button>
+                  </form>
+
+            </div>
+            <div class="modal-footer">
+                <p>اگه اکانت داری چرا اینجایی پس
+                  <a id="form-links-a" href="" data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal">بفرما داخل دم در بده</a>
+                </p>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+    
+
+    <!-------------------------------------- Script --------------------------------------->
+    <script src="script.js"></script>
+
+</body>
+</html>

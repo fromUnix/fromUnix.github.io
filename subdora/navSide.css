@@ -1,0 +1,18 @@
+#side-nav {
+    background-color: rgb(30, 7, 51) !important;
+    border: 2px solid rgb(30, 7, 51);
+    border-bottom-left-radius: 70px;
+}
+
+aside nav ul li {
+    padding: 10px;
+}
+
+aside nav ul li a {
+    color: white !important;
+}
+
+
+hr, span {
+    color: white !important;
+}

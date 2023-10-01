@@ -1,0 +1,45 @@
+/*************************************** Side nav *************************************/
+/****** Search button *******/
+#button-search {
+    background-color: rgb(16, 8, 92) !important;
+    border-color: rgb(16, 8, 92) !important;
+    color: white;
+}
+
+#aside-nav {
+    z-index: 0 !important;
+}
+
+
+/*************************************** Main posts *************************************/
+
+.colors{
+    display:flex;
+}
+
+.colors span{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    cursor:pointer;
+    display:flex;
+    margin-right:6px;
+}
+
+.colors span:nth-child(1) {
+    
+    background-color:red;
+    
+}
+
+.colors span:nth-child(2) {
+    
+    background-color:blue;
+    
+}
+
+.colors span:nth-child(3) {
+    
+    background-color:purple;
+    
+}
