@@ -1,0 +1,759 @@
+<!-- In the name of GOD who gave me this power -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BBC, news, World news, TV"/>
+    <meta name="description" content="BBC English News"/>
+    <meta name="author" content="Ali Bolouki"/>
+    <!--Title bar-->
+    <link rel="shortcut icon" href="images/title bar/icons8-bbc.svg"/>
+    <title>BBC | English</title>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--Bootstrap4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<!-- <body onload="alert('Hey this is Ali Bolouki.\nThis website is just for traning.');"> -->
+<body>
+    <header class="sticky-top">
+        <!-- navbar -->
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav id="nav" class="col-12 navbar navbar-light border-bottom">
+                    <!-- main logo -->
+                    <a href="" id="navbar-brand" class="navbar-brand">
+                        <img src="images/main icon/icons8-bbc-150.png" alt="BBC icon"/>
+                    </a>
+
+                    <ul id="ul-nav" class="navbar-nav d-md-inline-block d-none">
+
+                        <li id="li-nav-1" class="nav-item d-inline-block pr-3 pl-3">
+                            <a href="#sing-in-sec" class="nav-link">
+                                <img src="images/navbar/icons8-add-user-male-48.png" alt="User icon"/>
+                                Sign in
+                            </a>
+                        </li>
+
+                        <li id="li-nav-2" class="nav-item d-inline-block pr-3 pl-3">
+                            <a href="#home-con" class="nav-link">Home</a>
+                        </li>
+
+                        <li id="li-nav-3" class="nav-item d-inline-block pr-3 pl-3">
+                            <a href="#today-con" class="nav-link">Today</a>
+                        </li>
+
+                        <li id="li-nav-4" class="nav-item d-inline-block pr-3 pl-3">
+                            <a href="#world-con" class="nav-link">World</a>
+                        </li>
+
+                        <li id="li-nav-5" class="nav-item d-inline-block pr-3 pl-3">
+                            <a href="#covid-19-con" class="nav-link">Covid-19</a>
+                        </li>
+                    </ul>
+
+                    <!-- This will show after md size -->
+                    <div id="navbar-div-in-small-size" class="d-md-none d-inline-block">
+                        <a href="#sing-in-sec" class="nav-link d-inline-block pr-1 pl-1">
+                            <img src="images/navbar/icons8-add-user-male-48.png" alt="User icon"/>
+                            Sign in
+                        </a>
+
+                        <a class="nav-link dropdown-toggle d-inline-block pr-1 pl-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div id="dropdown" class="dropdown-menu text-center dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item nav-link" href="#home-con">Home</a>
+                          <a class="dropdown-item nav-link" href="#today-con">Today</a>
+                          <a class="dropdown-item nav-link" href="#world-con">World</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item nav-link" href="#covid-19-con">Covid-19</a>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home section -->
+        <div id="home-con" class="container-fluid mt-3">
+
+            <!-- text main -->
+            <div class="row">
+                <h1 class="col-12 text-dark font-weight-bolder">Home</h1>
+            </div>
+
+            <!-- main pics -->
+                <div class="row">
+
+                <!-- big pic left side -->
+                  <div id="pic-onhover" class="col-md-6 col-12 border-0 card">
+                    <img class="view overlay zoom" src="images/home picture/1.jpg" alt="News pictures"/>
+                    <div class="card-img-overlay">
+                        <div id="line-h-home">
+                            <p class="ml-1">Trapm Talking About Tax</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- smaller pics right side -->
+                  <div class="col-md-6 col-12">
+                    <div class="row mt-sm-0 mt-3">
+
+                      <div id="pic-onhover" class="col-sm-6 col-10 mx-auto border-0 card column">
+                        <img src="images/home picture/2.jpg" alt="News pictures"/>
+                        <div class="card-img-overlay">
+                            <div id="line-h-home">
+                                <p class="ml-1">Big Companies</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="pic-onhover" class="col-sm-6 col-10 mx-auto border-0 card column">
+                        <img src="images/home picture/3.jpg" alt="News pictures"/>
+                        <div class="card-img-overlay">
+                            <div id="line-h-home">
+                                <p class="ml-1">Football</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="pic-onhover" class="col-sm-6 col-10 mx-auto mt-3 border-0 card column">
+                        <img src="images/home picture/4.jpg" alt="News pictures"/>
+                        <div class="card-img-overlay">
+                            <div id="line-h-home">
+                                <p class="ml-1">Tennis</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="pic-onhover" class="col-sm-6 col-10 mx-auto mt-3 border-0 card column">
+                        <img src="images/home picture/5.jpg" alt="News pictures"/>
+                        <div class="card-img-overlay">
+                            <div id="line-h-home">
+                                <p class="ml-1">Terrorisme</p>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Today section -->
+                <div id="today-con" class="container-fluid mt-5">
+                    <!-- text main -->
+                    <div class="row">
+                        <h2 class="col-12 text-dark font-weight-bolder">Today</h2>
+                    </div>
+
+                    <!-- main pic -->
+                    <div class="row mt-2">
+                        <!-- pic 1 -->
+                        <div id="pic-onhover-today-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/today picture/1.jpg" alt="Today News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Anonymous Hackers</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">The millionaire tech inventor 'thrown away' as a baby</p>
+                            <p class="text-dark">Anonymous hackers stole 100 facebook accounts.</p>
+                          </div>
+
+                        <!-- pic 2 -->
+                        <div id="pic-onhover-today-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/today picture/2.jpg" alt="Today News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Crackers</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">Turkey vows to solve 'sea snot' blanketing coast</p>
+                            <p class="text-dark">Some ethnic hacker groups.</p>
+                          </div>
+
+                        <!-- pic 3 -->
+                        <div id="pic-onhover-today-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/today picture/3.jpg" alt="Today News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Hacker Issues</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">Protesters meet cruise ships returning to Venice</p>
+                            <p class="text-dark">Can this issue be dangerous!?</p>
+                          </div>
+
+                    </div>
+                </div>
+
+                <!-- World section -->
+                <div id="world-con" class="container-fluid mt-5">
+                    <!-- text main -->
+                    <div class="row">
+                        <h3 class="col-12 text-dark font-weight-bolder">World</h3>
+                    </div>
+
+                    <!-- main pic -->
+                    <div class="row mt-2">
+                        <!-- pic 1 -->
+                        <div id="pic-onhover-world-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/world picture/1.jpg" alt="World News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">How did the ANOM sting work?</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">An innovative strategy for catching criminals</p>
+                            <p class="text-dark">More than 800 suspected criminals have been arrested worldwide after being tricked into using an FBI-run encrypted messaging app, officials say.</p>
+                          </div>
+
+                        <!-- pic 2 -->
+                        <div id="pic-onhover-world-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/world picture/2.jpg" alt="World News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Canada truck attack: Muslim family victims named</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">Canadian Prime Minister Justin Trudeau has identified the four members of a Muslim family killed in a "premeditated" attack on Sunday.</p>
+                            <p class="text-dark">Madiha Salman, 44, her husband Salman Afzaal, 46, their 15-year-old daughter Yumna Afzaal and Mr Afzaal's 74-year-old mother were hit by a vehicle while on an evening walk in London, Ontario.</p>
+                          </div>
+
+                        <!-- pic 3 -->
+                        <div id="pic-onhover-world-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/world picture/3.jpg" alt="World News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Euro 2020: How Gareth Southgate restored faith in England’s national team</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">"One of the main factors I got with Gareth Southgate," 42-cap striker Danny Welbeck says of the England manager, "was he likes to make sure there's a really good culture within the group".</p>
+                            <p class="text-dark">It is a term that is referenced with increasing regularity within the sporting world, one dismissed by detractors as a form of empty business jargon.</p>
+                          </div>
+
+                    </div>
+                </div>
+
+                <!-- Covid-19 section -->
+                <div id="covid-19-con" class="container-fluid mt-5">
+                    <!-- text main -->
+                    <div class="row">
+                        <h4 class="col-12 text-dark font-weight-bolder">Covid-19</h4>
+                    </div>
+
+                    <!-- main pic -->
+                    <div class="row mt-2">
+                        <!-- pic 1 -->
+                        <div id="pic-onhover-covid-19-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/covid-19 picture/1.jpg" alt="Covid-19 News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Covid-19 Restrictions</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">The debate in the Northern Ireland Assembly on the easing of Covid-19 restrictions, from Tuesday 18 May.</p>
+                          </div>
+
+                        <!-- pic 2 -->
+                        <div id="pic-onhover-covid-19-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/covid-19 picture/2.jpg" alt="Covid-19 News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Covid: Scotland would 'move quickly' to vaccinate children</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">Scotland will start to vaccinate children aged between 12 and 15 as quickly as possible if experts recommend it, Nicola Sturgeon has said.</p>
+                            <p class="text-dark">The Pfizer-BionTech vaccine was approved for use among the age group by the UK's medicine regulator last week.</p>
+                          </div>
+
+                        <!-- pic 3 -->
+                        <div id="pic-onhover-covid-19-sec" class="col-md-4 col-sm-8 col-12 mt-md-0 mt-2 mx-auto border-0 card">
+                            <img src="images/covid-19 picture/3.jpg" alt="Covid-19 News picture"/>
+                            <div class="card-img-overlay">
+                                <div id="line-h-home">
+                                    <p class="ml-1">Covid in Scotland: Answers to your questions</p>
+                                </div>
+                            </div>
+                            <!-- text under image -->
+                            <p class="card-text text-dark font-weight-bolder h4">Now that the vaccine has been approved for teenagers, can those living with someone clinically vulnerable be vaccinated? Karen, Fife</p>
+                            <p class="text-dark">At present, there is no routine vaccination of under-18s against Covid in the UK.</p>
+                          </div>
+
+
+                    </div>
+                </div>
+
+                 <!-- real section -->
+                 <div id="real-con" class="container-fluid">
+
+                    <div class="row">
+                        <h5 class="col-12 h1">Real Videos</h5>
+                        <p class="col-12">The best videos you ever saw</p>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- pic 1 -->
+                        <div id="cards-real-sec" class="card mt-3 mx-auto border-0">
+                            <div class="card-header">
+                                <p class="card-text text-danger h3">New</p>
+                            </div>
+                            <!-- img -->
+                            <img id="card-img-real-sec" class="card-img" src="images/real section/1.jpg" alt="Real section picture"/>
+                            <div class="card-footer">
+                                <p class="card-text text-dark font-weight-bolder h3">Are floating pods the future of transport?</p>
+                                <time class="card-text text-dark">2021/8/6</time>
+                            </div>
+                        </div>
+
+                        <!-- pic 2 -->
+                        <div id="cards-real-sec" class="card mt-3 mx-auto border-0">
+                            <div class="card-header">
+                                <p class="card-text text-danger h3">New</p>
+                            </div>
+                            <!-- img -->
+                            <img id="card-img-real-sec" class="card-img" src="images/real section/2.jpg" alt="Real section picture"/>
+                            <div class="card-footer">
+                                <p class="card-text text-dark font-weight-bolder h3">The art of mashing up words to invent new ones</p>
+                                <time class="card-text text-dark">2021/8/9</time>
+                            </div>
+                        </div>
+
+                        <!-- pic 3 -->
+                        <div id="cards-real-sec" class="card mt-3 mb-4 mx-auto border-0">
+                            <div class="card-header">
+                                <p class="card-text text-danger h3">New</p>
+                            </div>
+                            <!-- img -->
+                            <img id="card-img-real-sec" class="card-img" src="images/real section/3.jpg" alt="Real section picture"/>
+                            <div class="card-footer">
+                                <p class="card-text text-dark font-weight-bolder h3">The Cold War race to the centre of the Earth</p>
+                                <time class="card-text text-dark">2021/8/7</time>
+                            </div>
+                        </div>
+
+                        <!-- pic 4 -->
+                        <div id="cards-real-sec" class="card mt-3 mb-4 mx-auto border-0">
+                            <div class="card-header">
+                                <p class="card-text text-danger h3">New</p>
+                            </div>
+                            <!-- img -->
+                            <img id="card-img-real-sec" class="card-img" src="images/real section/4.jpg" alt="Real section picture"/>
+                            <div class="card-footer">
+                                <p class="card-text text-dark font-weight-bolder h3">Work life</p>
+                                <time class="card-text text-dark">2021/9/5</time>
+                            </div>
+                        </div>
+
+                        <a id="text-footer-real-sec" href="" class="col-12 mx-auto d-block text-center text-white-50 text-decoration-none mb-3">More >></a>
+
+                    </div>
+                </div>
+
+                <!-- Good life section half the page = left in big dev -->
+                <div class="container-fluid mt-5">
+
+                    <div class="row">
+                        <h5 class="col-12 text-dark">Good life</h5>
+                    </div>
+
+                    <div class="row">
+                        <div id="big-img-goodlife-sec" class="card col-md-9 col-12 mx-md-0 mx-auto border-0">
+                            <img class="card-img" src="images/good life section/1.webp" alt="Good life picture"/>
+                        </div>
+
+                        <!-- LATEST BUSINESS NEWS section half the page = right side in big dev -->
+                        <ul id="ul-good-life-sec" class="col-md-3 col-sm-10 col-12 text-dark text-center mt-md-0 mt-3 mx-md-0 mx-auto">
+                            <li class="text-white bg-danger pt-1 pb-1">LATEST BUSINESS NEWS</li>
+                            <li class="text-white bg-dark pt-3 pb-3">Goldman bankers ordered to report vaccine status before office return</li>
+                            <li class="text-white bg-secondary pt-3 pb-3">Starbucks faces drinks ingredients shortage in US</li>
+                            <li class="text-white bg-dark pt-3 pb-3">Used car costs drive US prices higher in May</li>
+                            <li class="text-white bg-secondary pt-3 pb-3">Oatly sues UK oat milk maker over trademark</li>
+                            <li class="text-white bg-dark pt-3 pb-3">Goldman bankers ordered to report vaccine status before office return</li>
+                            <li class="text-white bg-secondary pt-3 pb-3">Starbucks faces drinks ingredients shortage in US</li>
+                        </ul>
+                    <!-- </div> -->
+
+                    <!-- <div class="col-md-9 col-12 mx-md-0 mx-auto"> -->
+                            <div id="card-small-goodlife-sec" class="card mx-md-0 mx-auto col-md-3 col-11 mt-2 border-0">
+                                <img class="card-img mt-2" src="images/good life section/2.webp" alt="Good life picture"/>
+                                <p class="card-footer text-dark">Healthy foods</p>
+                            </div>
+        
+                            <div id="card-small-goodlife-sec" class="card mx-md-0 mx-auto col-md-3 col-11 mt-2 border-0">
+                                <img class="card-img mt-2" src="images/good life section/3webp.webp" alt="Good life picture"/>
+                                <p class="card-footer text-dark">Work hard</p>
+                            </div>
+    
+                            <div id="card-small-goodlife-sec" class="card mx-md-0 mx-auto col-md-3 col-11 mt-2 border-0">
+                                <img class="card-img mt-2" src="images/good life section/4.webp" alt="Good life picture"/>
+                                <p class="card-footer text-dark">Amazing view</p>
+                            </div>
+                    </div>
+
+                </div>
+
+
+                <!-- slidbar -->
+                <div class="container-fluid">
+
+                    <div class="row mt-5 text-center">
+                        <h6 class="col-12 text-dark">Some News from BBC TV</h6>
+                    </div>
+
+                    <div class="row">
+
+                        <div id="myCarousel" class="col-12 carousel slide d-block text-center mx-auto mt-2 mb-5" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-interval="2000">
+                                <img id="img-slidbar" class="img-fluid" src="images/slidbar/1.jpg" alt="News">
+                                <div class="carousel-caption">
+                                    <p class="h3 col-sm-8 col-12 mx-auto">Virgin Atlantic explores 'flying taxi' partnership</p>
+                                    <p class="col-sm-8 col-12 mx-auto d-sm-block d-none">The airline suggests electric vertical take-off and landing vehicles (eVTOL) could fly from towns to major airports.</p>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item" data-interval="2000">
+                                <img id="img-slidbar" class="img-fluid" src="images/slidbar/2.jpg" alt="News">
+                                <div class="carousel-caption">
+                                    <p class="h3 col-sm-8 col-12 mx-auto">Canada truck attack: Loved ones describe family as 'the best among us'</p>
+                                    <p class="col-sm-8 col-12 mx-auto d-sm-block d-none">On Saturday, London, Ontario's Muslim community will lay to rest four members of a family killed in what police say was a racially motivated attack. Here's what we know about the family.</p>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item" data-interval="2000">
+                                <img id="img-slidbar" class="img-fluid" src="images/slidbar/3.jpg" alt="News">
+                                <div class="carousel-caption">
+                                    <p class="h3 col-sm-8 col-12 mx-auto">Humpback whale gulps and spits out Cape Cod lobsterman</p>
+                                    <p class="col-sm-8 col-12 mx-auto d-sm-block d-none">A US lobsterman has been describing how he escaped being swallowed by a humpback whale.</p>
+                                </div>
+                              </div>
+        
+                              <div class="carousel-item" data-interval="2000">
+                                <img id="img-slidbar" class="img-fluid" src="images/slidbar/4.jpg" alt="News">
+                                <div class="carousel-caption">
+                                    <p class="h3 col-sm-8 col-12 mx-auto">Euro 2020 opened in spectacular fashion as Italy got their campaign off to an impressive start in front of their own fans with a comfortable victory against Turkey.</p>
+                                    <p class="col-sm-8 col-12 mx-auto d-sm-block d-none">Italy coach Mancini had talked about "an extra level of pressure" on his team for being involved in the opening match.</p>
+                                </div>
+                              </div>
+        
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <!-- World in pictures -->
+                <div class="container-fluid">
+                    
+                    <div class="row">
+                        <p id="world-pic-text" class="h3 text-center text-dark">World in pictures</p>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-sm-6 col-12 card border-0">
+                            <img class="card-img" src="images/World in pictures/1.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-6 col-12 card border-0 mt-sm-0 mt-3">
+                            <img class="card-img" src="images/World in pictures/1.png" alt="Some Picture about world"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/3.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/4.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/5.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/6.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/7.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-2">
+                            <img class="card-img" src="images/World in pictures/8.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-sm-n5 mt-2">
+                            <img class="card-img" src="images/World in pictures/9.jpg" alt="Some Picture about world"/>
+                        </div>
+
+                        <div class="col-sm-4 mx-auto col-12 card border-0 mt-sm-n5 mt-2">
+                            <img class="card-img" src="images/World in pictures/10jpg.jpg" alt="Some Picture about world"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Around BBC -->
+                <div class="container-fluid mt-5">
+
+                    <div class="row">
+                        <p id="aroundBBC-sec-text" class="h3 text-dark">Around BBC</p>
+                    </div>
+
+                    <!-- Left side of the page -->
+                    <div class="row mt-3">
+                        <ul id="ul-aroundbbc-sec" class="col-md-4 col-sm-8 col-12 text-center">
+                            <li class="bg-secondary p-2">More around BBC</li>
+                            <li class="bg-danger p-4">Tech Tent: Is the FBI winning the crime war?</li>
+                            <li class="bg-dark p-4">Motor neurone disease: Intense exercise increases risk, say scientists</li>
+                            <li class="bg-danger p-4">'Quick fixes' to the climate crisis risk harming nature</li>
+                            <li class="bg-dark p-4">Amazon-dwellers lived sustainably for 5,000 years</li>
+                            <li class="bg-danger p-4">G7 summit: Why does it matter?</li>
+                            <li class="bg-dark p-4">US-UK special relationship: How goes it under Biden and Johnson?</li>
+                        </ul>
+
+                        <!-- right side of the page -->
+                        <div class="col-sm-8 col-12 mx-auto">
+                            <div class="border-0 card">
+                                <img class="card-img" src="images/around BBC/1.jpg" alt="Around BBC picture"/>
+                            </div>
+                        </div>
+
+                        <!-- small pic -->
+                        <div class="row">
+                            <div class="border-0 d-inline-block mt-2 card col-md-4 col-sm-8 col-11 mx-auto">
+                                <img class="card-img" src="images/around BBC/2.jpg" alt="Around BBC picture"/>
+                                <div class="card-footer d-inline-block">
+                                    <span class="card-text text-dark">Chamoli disaster: 'It hit the valley floor like 15 atomic bombs'</span>
+                                </div>
+                            </div>
+    
+                            <div class="border-0 d-inline-block mt-2 card col-md-4 col-sm-8 col-11 mx-auto">
+                                <img class="card-img" src="images/around BBC/3.jpg" alt="Around BBC picture"/>
+                                <div class="card-footer d-inline-block">
+                                    <span class="card-text text-dark">SLS: First view of Nasa's assembled 'megarocket' 65m (212ft)</span>
+                                </div>
+                            </div>
+
+                            <div class="border-0 d-inline-block mt-2 card col-md-4 col-sm-8 col-11 mx-auto">
+                                <img class="card-img" src="images/around BBC/4.jpg" alt="Around BBC picture"/>
+                                <div class="card-footer d-inline-block">
+                                    <span class="card-text text-dark">The mobile launcher allows access to the SLS for testing, checkout and servicing. It will also transfer the giant rocket to the launch pad.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- sing in -->
+                <div id="sing-in-sec" class="container-fluid mt-5">
+
+                    <div class="row">
+                        <p class="col-12 text-center h3 mb-3 mt-5">Sing in</p>
+                    </div>
+
+                    <div class="row text-center">
+                        <form class="col-12 mx-auto" action="" onsubmit="return false;">
+                            <!-- name -->
+                            <lable for="in1">Your Name:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="text" id="in1" placeholder="Enter Here!"/>
+                            
+                            <!-- number -->
+                            <lable for="in2">Your Phone-number:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="tel" id="in2" placeholder="Enter Here!"/>
+
+                            <!-- Password -->
+                            <lable for="in3">Your Password:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="password" id="in3" placeholder="Enter Here!"/>
+
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto btn btn-danger mb-3" type="submit" value="Check"/>
+
+                            <a class="col-12 mx-auto d-block text-white mb-5" onclick="singIn(); return false;" href="">Don't have an account?! Sing up</a>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- ssing up = This has a display none first-->
+                <div id="sing-up-sec" class="container-fluid mt-5">
+
+                    <div class="row">
+                        <p class="col-12 text-center h3 mb-3 mt-5">Sing up</p>
+                    </div>
+
+                    <div class="row text-center">
+                        <form class="col-12 mx-auto" action="" onsubmit="return false;">
+                            <!-- name -->
+                            <lable for="in1">Your Name:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="text" id="in1" placeholder="It will become your username"/>
+                            
+                            <!-- number -->
+                            <lable for="in2">Your Phone-number:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="tel" id="in2" placeholder="546-5934-234"/>
+
+                            <!-- Password -->
+                            <lable for="in3">Create Password:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="password" id="in3" placeholder="***********"/>
+
+                            <!-- Email -->
+                            <lable for="in3">Your Email:</lable>
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" type="email" id="in3" placeholder="example@google.com"/>
+
+                            <!-- dropdown -->
+                            <lable for="in4">Where are you now?</lable>
+                            <select id="in4" class="col-md-3 col-sm-10 col-12 mx-auto mb-3 form-control">
+                                <option value="Iran">Iran</option>
+                                <option value="US">U.S</option>
+                                <option value="UK">U.K</option>
+                                <option value="Russian">Rissian</option>
+                            </select>
+
+                            <!-- about the person -->
+                            <lable for="in5">Write about your self.</lable>
+                            <textarea id="in5" class="col-md-3 col-sm-10 col-12 mx-auto form-control mb-3" rows="3" cols="1" placeholder="I have been in..."></textarea>
+
+                            <input class="col-md-3 col-sm-10 col-12 mx-auto btn btn-danger mb-3" type="submit" value="Check"/>
+
+                            <a class="col-12 mx-auto d-block text-white mb-5" onclick="singUp(); return false;" href="">Already have an account?! Sing in</a>
+                        </form>
+                    </div>
+
+                </div>
+    </main>
+
+    <footer>
+
+        <!-- BBC in other languages -->
+        <div class="container-fluid mt-5 bg-secondary">
+
+            <div class="row">
+                <p class="col-12 text-dark h3 mt-3 mb-3">BBC in other languages</p>
+            </div>
+
+            <div class="row">
+                <!-- Pesian -->
+                <ul class="col-sm-3 col-6" id="uls-footer" dir="rtl">
+                    <li class="font-weight-bolder text-white-50">فارسی<li>
+                    <li><a class="text-white" href="">جهان</a><li>
+                    <li><a class="text-white" href="">جدید</a><li>
+                    <li><a class="text-white" href="">همیشگی</a></li>
+                    <li><a class="text-white" href="">کرونا</a></li>
+                </ul>
+
+                <!-- Russian -->
+                <ul class="col-sm-3 col-6" id="uls-footer">
+                    <li class="font-weight-bolder text-white-50">Russian<li>
+                    <li><a class="text-white" href="">овал в пятницу</a><li>
+                    <li><a class="text-white" href="">сборной</a><li>
+                    <li><a class="text-white" href="">ле и был</a></li>
+                    <li><a class="text-white" href="">ая Англии</a></li>
+                </ul>
+
+                <!-- Spanish -->
+                <ul class="col-sm-3 col-6" id="uls-footer">
+                    <li class="font-weight-bolder text-white-50">Spanish<li>
+                    <li><a class="text-white" href="">niños</a><li>
+                    <li><a class="text-white" href="">en Reino</a><li>
+                    <li><a class="text-white" href="">décadas</a></li>
+                    <li><a class="text-white" href="">ra un nuev</a></li>
+                </ul>
+
+                <!-- Portuguese -->
+                <ul class="col-sm-3 col-6" id="uls-footer">
+                    <li class="font-weight-bolder text-white-50">Portuguese<li>
+                    <li><a class="text-white" href="">ndicação</a><li>
+                    <li><a class="text-white" href="">professor da USP</a><li>
+                    <li><a class="text-white" href="">amos Tavar</a></li>
+                    <li><a class="text-white" href="">dicação</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- linking footer -->
+        <div class="container-fluid mt-3">
+
+            <div class="row">
+                <p class="col-12 text-dark h4 mb-3">Explore BBC</p>
+            </div>
+
+            <div class="row text-center">
+                <ul class="col-sm-3 col-6 border-left border-right" id="uls-footer">
+                    <li><a class="text-dark" href="">Home</a></li>
+                    <li><a class="text-dark" href="">News</a></li>
+                </ul>
+
+                <ul class="col-sm-3 col-6 border-left border-right" id="uls-footer">
+                    <li><a class="text-dark" href="">Futer</a></li>
+                    <li><a class="text-dark" href="">Old</a></li>
+                </ul>
+
+                <ul class="col-sm-3 col-6 border-left border-right" id="uls-footer">
+                    <li><a class="text-dark" href="">Sport</a></li>
+                    <li><a class="text-dark" href="">Music</a></li>
+                </ul>
+
+                <ul class="col-sm-3 col-6 border-left border-right" id="uls-footer">
+                    <li><a class="text-dark" href="">Real</a></li>
+                    <li><a class="text-dark" href="">Tv</a></li>
+                </ul>
+            </div>
+            <hr/>
+
+            <div class="row">
+                <p class="col-12 text-secondary text-center">Copyright © 2021 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+                <a class="col-12 text-black-50 text-center mb-2" href="https://ali-bolouki.neocities.org/" target="_blank">Ali Bolouki</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function singIn() {
+            document.getElementById("sing-in-sec").style.display = "none";
+            document.getElementById("sing-up-sec").style.display = "block";
+        }
+
+        function singUp() {
+            document.getElementById("sing-in-sec").style.display = "block";
+            document.getElementById("sing-up-sec").style.display = "none";
+        }
+    </script>
+
+    <!-- BootStrap4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

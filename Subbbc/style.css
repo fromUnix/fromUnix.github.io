@@ -1,0 +1,220 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: white !important;
+    scroll-behavior: smooth;
+}
+
+/* navbar header */
+#nav, #dropdown {
+    background-color: black;
+}
+
+#navbar-brand {
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+
+#ul-nav {
+    list-style-type: none;
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+
+#ul-nav li {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#ul-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* hover on menu items */
+#li-nav-1:hover {
+    border-bottom: 3px solid red;
+}
+
+#li-nav-2:hover {
+    border-bottom: 3px solid rgb(31, 0, 170);
+}
+
+#li-nav-3:hover {
+    border-bottom: 3px solid rgb(0, 238, 40);
+}
+
+#li-nav-4:hover {
+    border-bottom: 3px solid rgb(149, 62, 184);
+}
+
+#li-nav-5:hover {
+    border-bottom: 3px solid rgb(211, 255, 17);
+}
+
+/* navbar for small devices */
+#navbar-div-in-small-size a {
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/* main */
+h1 {
+    border-left: 2px solid red;
+}
+
+h2 {
+    border-left: 2px solid green;
+}
+
+#line-h-home {
+    height: 22px;
+    border-left: 3px solid red;
+    transition: border 2s;
+}
+
+#line-h-home:hover {
+    border-left: 3px solid rgb(255, 255, 255);
+}
+
+#pic-onhover {
+    transition: transform .6s;
+    cursor: pointer;
+}
+
+#pic-onhover:hover {
+    transform: scale(.9);
+}
+
+/* today section */
+#pic-onhover-today-sec {
+    transition: filter .5s, transform .6s;
+    cursor: pointer;
+}
+
+#pic-onhover-today-sec:hover {
+    filter: hue-rotate(90deg);
+    transform: scale(1.05);
+}
+
+/* world section */
+h3 {
+    border-left: 2px solid rgb(13, 0, 128);
+}
+
+#pic-onhover-world-sec {
+    transition: margin .6s;
+}
+
+#pic-onhover-world-sec:hover {
+    margin-top: -1% !important;
+}
+
+/* covid-19 section */
+h4 {
+    border-left: 2px solid rgb(128, 0, 122);
+}
+
+#pic-onhover-covid-19-sec {
+    transition: filter .5s;
+}
+
+#pic-onhover-covid-19-sec:hover {
+    filter: opacity(.8);
+}
+
+
+/* real section */
+#real-con {
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+#cards-real-sec {
+    width: 40rem;
+    overflow: hidden;
+}
+
+#card-img-real-sec {
+    transition: transform 1s;
+}
+
+#card-img-real-sec:hover {
+    transform: scale(1.05);
+}
+
+#text-footer-real-sec {
+    transition: padding .5s;
+}
+
+#text-footer-real-sec:hover {
+    padding-left: 5% !important;
+}
+
+/* Good life section */
+h5 {
+    border-left: 2px solid rgb(218, 188, 58);
+}
+
+#big-img-goodlife-sec {
+    transition: filter 1s;
+}
+
+#big-img-goodlife-sec:hover {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+#card-small-goodlife-sec {
+    width: 33%;
+}
+
+#ul-good-life-sec {
+    list-style-type: none;
+}
+
+/* world pic section */
+#world-pic-text {
+    border-bottom: 2px solid rgb(7, 92, 42);
+}
+
+/* Around BBC section */
+#aroundBBC-sec-text {
+    border-bottom: 2px solid #0307eb;
+}
+
+#small-pic-aroundbbc-sec {
+    width: 40%;
+}
+
+#ul-aroundbbc-sec {
+    list-style-type: none;
+}
+
+/* sing in/up section */
+#sing-in-sec {
+    background-image: url('images/singin/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sing-up-sec {
+    background-image: url('images/singin/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+/* footer */
+
+/* other languages */
+#uls-footer {
+    list-style-type: none;
+}
