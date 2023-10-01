@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+#logo {
+    width: 30px;
+}
+
+#ul {
+    list-style-type: none;
+}
+
+#ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#ul li a:hover {
+    color: red;
+}
+
+/* main */
+#text-in-the-top {
+    background-color: #f4eddd;
+}
+
+#text-in-the-top  h1 {
+    font-size: 160%;
+}
+
+#text-in-the-top small {
+    font-size: 80%;
+}
+
+/* story 1 */
+#story-1-intro-text, #story-2-intro-text, #story-3-intro-text, #story-4-intro-text, #story-5-intro-text {
+    background-color: #f4eddd;
+}
+
+#main-story1-text::first-letter {
+    font-size: 200%;
+}
+
+/* Footer */
+#footer-icons-img {
+    width: 25px;
+}
+
+#myName a {
+    text-decoration: none;
+    color: black;
+}
+
+#a-go-top {
+    text-decoration: none;
+}
+
+#a-go-top:hover {
+    color: black !important;
+}

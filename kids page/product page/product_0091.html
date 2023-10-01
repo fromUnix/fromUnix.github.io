@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Clothing Shop, H and M, H&M, Modeling, Clothing Brand"/>
+    <meta name="description" content="H&M clothing shop"/>
+    <meta name="author" content="Ali Bolouki"/>
+    <!--Title bar-->
+    <link rel="shortcut icon" href="../../images/title bar/Logo.svg"/>
+    <title>H&M | Product page</title>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--Bootstrap4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <header class="fixed-bottom">
+        <!-- The main navbar menu -->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-12 navbar navbar-expand-sm navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- H&M icon in sm size -->
+                    <img class="d-sm-none d-block" id="little-logo" src="../../images/main logo/Logo.svg" alt="H&M red logo"/>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a id="a-links" class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="../../../men page/all/root.html">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="../../../women page/all/root.html">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="../../../kids page/all/root.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="../../../baby page/all/root.html">Baby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="#body">&#8593;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="a-links" class="nav-link" href="#footer">&#8595;</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block" id="little-icon">
+                            <a href="root.html"><img id="little-logo" src="../../images/main logo/Logo.svg" alt="little H&M's icon"/></a>
+                        </li>
+                        <!-- Dropdown menu -->
+                        <li class="nav-item dropdown d-md-none d-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="sign in page/root.html">Sign in</a>
+                                <a class="dropdown-item" href="Bag page/root.html">Youe Bag</a>
+                                <a class="dropdown-item" href="https://apps.apple.com/app/h-m-app/id834465911?ign-mpt=uo%3D4" target="_blank">ios App</a>
+                                <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.hm.goe" target="_blank">Andriod App</a>
+                            </div>
+                          </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control col-md-8 mr-2 w-50" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- add to bag and chose the size and color -->
+                <div class="col-md-4 col-sm-8 col-12 mx-auto form-group border-right bg-light sticky-top">
+
+                    <!-- some details -->
+                    <p class="text-center mt-3">OFF 60%</p>
+                    <p class="text-center">Price: 10$<p>
+
+                    <!-- color input -->
+                    <lable class="col-8 text-center mt-3 d-block mx-lg-0 mx-auto" for="in1">Chose the color:</lable>
+                    <input type="color" class="col-sm-8 col-12 mx-auto form-control" id="in1"/>
+
+                    <!-- size input -->
+                    <lable class="col-8 text-center mt-3 d-block mx-lg-0 mx-auto" for="in2">Chose the size:</lable>
+                    <select id="in2" class="col-sm-8 col-12 mx-auto form-control">
+                        <option selected>Size</option>
+                        <option value="Small">S</option>
+                        <option value="Medium">M</option>
+                        <option value="Larg">L</option>
+                        <option value="XLarg">XL</option>
+                        <option value="2XLarg">2XL</option>
+                        <option value="3XLarg">3XL</option>
+                    </select>
+
+                    <!-- add button -->
+                    <button class="col-sm-8 col-12 mx-auto d-block btn btn-outline-danger mt-3 mb-5">Add</button>
+                </div>
+
+                <!-- main content -->
+                <img class="col-md-4 col-sm-6 col-12" src="../images/shoes/hmgoepprod (7).jpg" alt="Cloth"/>
+                <img class="col-md-4 col-sm-6 col-12" src="../images/shoes/hmgoepprod (11).jpg" alt="Cloth"/>
+
+                <!-- text about produc -->
+                <p class="col-lg-4 col-sm-8 col-12 text-center mx-auto pb-5 pt-3">Cargo joggers in stretch cotton twill with an elasticated drawstring waist, side pockets and flap back and leg pockets with press-studs. Fake fly, shaping seams at the knees and ribbed hems.</p>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

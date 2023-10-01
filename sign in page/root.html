@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Clothing Shop, H and M, H&M, Modeling, Clothing Brand"/>
+    <meta name="description" content="H&M clothing shop"/>
+    <meta name="author" content="Ali Bolouki"/>
+    <!--Title bar-->
+    <link rel="shortcut icon" href="../images/title bar/Logo.svg"/>
+    <title>H&M | Sign in</title>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--Bootstrap4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- navbar fixed top -->
+                <div class="navbar col-md-8 col-12 navbar-light bg-light mx-auto">
+                    <ul id="ul" class="mx-auto text-center">
+                        <a href="root.html"><li class="d-inline-block mr-4 mt-2">
+                            <img id="handm-logo-navbar" src="../images/main logo/Logo.svg" alt="H&M red logo"/>
+                        </li></a>
+                        <a href="../index.html"><li class="d-inline-block mr-4 mt-2">Home</li></a>
+                        <a href="../men page/all/root.html"><li class="d-inline-block mr-4 mt-2">Men</li></a>
+                        <a href="../women page/all/root.html"><li class="d-inline-block mr-4 mt-2">Women</li></a>
+                        <a href="../kids page/all/root.html"><li class="d-inline-block mr-4 mt-2">Kids</li></a>
+                        <a href="../baby page/all/root.html"><li class="d-inline-block mr-4 mt-2">Baby</li></a>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Form -->
+                <form action="#" onsubmit="return false;" class="col-md-4 col-sm-8 col-12 mx-auto mt-5" id="form-sign-in">
+                    <!-- input one = UserName -->
+                    <div class="form-group">
+                        <lable for="in1">Your UserName:</lable>
+                        <input type="text" id="in1" class="form-control" placeholder="UserName"/>
+                    </div>
+
+                    <!-- input two = Password -->
+                    <div class="form-group">
+                        <lable for="in2">Your Password:</lable>
+                        <input type="password" id="in2" class="form-control" placeholder="Password"/>
+                    </div>
+
+                    <!-- To find if you are not robot -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm col-12">
+                                <input type="number" value="839432" class="form-control" readonly/>
+                            </div>
+
+                            <div class="col-sm col-12">
+                                <input type="number" class="form-control" placeholder="Enter The Number"/>
+                                <small class="text-form text-muted">To find if you are not a robot</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Two button -->
+                        <div class="btn-group text-center mt-2 d-block">
+                            <!-- submit -->
+                            <input type="submit" value="Sign in" class="btn btn-outline-success"/>
+                            <!-- reset -->
+                            <input type="reset" value="Reset" class="btn btn-outline-danger"/>
+                        </div>
+
+                        <p class="text-center mt-3"><a href="../sign up page/root.html">Don't have an account? Sign up Here</a></p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <footer>
+        <hr/>
+        <p class="lead text-center">CopyRight&#169;</p>
+        <small class="text-center mx-auto d-block">2021 - H&M INC.</small>
+    </footer>
+</body>
+</html>

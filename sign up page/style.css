@@ -1,0 +1,24 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* navbar fixed top */
+#ul {
+    list-style-type: none;
+}
+
+#ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#ul a:hover {
+    color: rgb(226, 4, 4);
+}
+
+#handm-logo-navbar {
+    width: 20px;
+}
