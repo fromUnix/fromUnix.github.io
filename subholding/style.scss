@@ -1,0 +1,505 @@
+/* color variables */
+// $gold: #FFD700;
+$gold: linear-gradient(#e5b06a , #d0985a, #a06339);
+$gold0: #e5b06a;
+$gold1: #d0985a;
+$gold2: #a06339;
+
+@font-face {
+    font-family: manshoor;
+    src: url('font/manshoor/Statics/Manshoor-Black.ttf') format('ttf'),
+        url('font/manshoor/Statics/Manshoor-Bold.ttf') format('ttf'),
+        url('font/manshoor/Statics/Manshoor-Heavy.ttf') format('ttf'),
+        url('font/manshoor/Statics/Manshoor-Medium.ttf') format('ttf'),
+        url('font/manshoor/Statics/Manshoor-SemiBold.ttf') format('ttf'),
+        url('font/manshoor/Statics/woff2/Manshoor-Black.woff2') format('woff2'),
+        url('font/manshoor/Statics/woff2/Manshoor-Bold.woff2') format('woff2'),
+        url('font/manshoor/Statics/woff2/Manshoor-ExtraBold.woff2') format('woff2'),
+        url('font/manshoor/Statics/woff2/Manshoor-Medium.woff2') format('woff2'),
+        url('font/manshoor/Statics/woff2/Manshoor-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: hamrah;
+    src: url('font/hamrah/Hamrah.ttf') format('ttf'),
+        url('font/hamrah/Hamrah.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: nimkat;
+    src: url('font/Nimkat/Nimkat-Medium\ [@ClubEdits].otf') format('otf'),
+        url('font/Nimkat/Nimkat-Medium\ [@ClubEdits].ttf') format('ttf'),
+        url('font//Nimkat/Nimkat-Medium\ [@ClubEdits].woff') format('woff'),
+        url('font/Nimkat/Nimkat-Medium\ [@ClubEdits].woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: iranyeks;
+    src:
+    url('font/IRANYekan/AnyConv.com__IRANYekan-Bold\ [@ClubEdits].woff') format('woff'),
+    url('font/IRANYekan/AnyConv.com__IRANYekan-Medium\ [@ClubEdits].woff') format('woff'),
+    url('font/IRANYekan/AnyConv.com__IRANYekanRegular\ [@ClubEdits].woff') format('woff'),
+    url('font/IRANYekan/IRANYekan-Bold\ [@ClubEdits].ttf') format('ttf'),
+    url('font/IRANYekan/IRANYekan-Black\ [@ClubEdits].ttf') format('ttf'),
+    url('font/IRANYekan/IRANYekan-Medium\ [@ClubEdits].ttf') format('ttf'),
+    url('font/IRANYekan/IRANYekan-Bold\ [@ClubEdits].woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: hamta;
+    src: 
+    url('font/hamta/Hamta\ [@ClubEdits].ttf') format('ttf'),
+    url('font/hamta/AnyConv.com__Hamta\ [@ClubEdits].woff') format('woff'),
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+    border-left: 5px solid;
+    border-image-source: $gold !important;
+    border-image-slice: 1;
+    scroll-behavior: smooth;
+    font-family: iranyeks !important;
+    overflow-x: hidden;
+    /***** scrollbar - only for chromium ****/
+    ::-webkit-scrollbar {
+        width: 3px;
+        background: black;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background: $gold;
+    }  
+}
+
+
+/*************** nav ***************/
+#--nav {
+    background-color: black;
+    font-size: 30px;
+    font-family: hamrah !important;
+}
+
+#--navUi {
+    padding: 0;
+    margin: 0;
+}
+
+#--navUi li {
+    position: relative;
+    padding: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#--navUi li::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gold;
+    transition: top 0.3s;
+}
+
+#--navUi li:hover::before{
+    top: -15%;
+    z-index: -1;
+}
+
+#--navUi li:hover a {
+    color: black !important;
+}
+
+/**** for small screens ***/
+#--smallScMenu {
+    background: $gold0;
+}
+
+#--appearingSmallMenu {
+    background: $gold;
+    transition: all 1s;
+    right: -100%;
+    border-bottom-left-radius: 50px;
+    height: 370px;
+    width: 250px;
+}
+
+#--smallScMenuImg {
+    transition-delay: .3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: transparent;
+}
+
+#--smallScMenuImg.active {
+    background-color: rgb(242, 241, 241) !important;
+    opacity: 0.8;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+#--navSmallSc {
+    font-size: 20px;
+    background-color: black;
+    height: 350px;
+    width: 250px;
+    border-bottom-left-radius: 50px;
+}
+
+#--navSmallSc ul li a{
+    background: $gold;
+    border-radius: 15px;
+}
+
+#--navSmallSc ul li:focus a {
+    background-color: #dbd4d4;
+}
+
+#--navSmallSc ul li a {
+    color: black !important;
+}
+
+
+/*************** about us ***************/
+@media only screen and (max-width: 630px) {
+    #--aboutUsText {
+        font-size: 16px !important;
+    }
+}
+
+h1 {
+    font-family: hamta !important;
+    transition: all .5s;
+    font-size: 25vh !important;
+}
+
+h1:hover {
+    color: $gold0 !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 20vh !important;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    #--mainImg {
+        margin-top: 145px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 15vh !important;
+    }
+
+    #--mainImg {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    h1 {
+        font-size: 8vh !important;
+    }
+
+    #--mainImg {
+        margin-top: 0px;
+    }
+}
+
+
+#--aboutUsText {
+    font-size: 25px;
+    text-align: justify;
+}
+
+h1 span {
+    color: $gold0;
+    transition: all .5s;
+}
+
+h1:hover span {
+    color: white !important;
+}
+
+#--3Dots {
+    color: $gold0;
+    cursor: pointer;
+}
+
+#--goDown {
+    width: 70px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+/*************** counter ***************/
+.--counterH4s {
+    color: $gold0;
+}
+
+#--counter1, #--counter2, #--counter3, #--counter4 {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Moirai One', cursive;
+    font-size: 70px;
+}
+
+@media only screen and (min-width: 770px) {
+    #--counterDiv1 {
+        border-right: 3px solid $gold2;
+        border-radius: 10px;
+    }
+    
+    #--counterDiv2 {
+        border-left: 3px solid $gold2;
+        border-right: 3px solid $gold2;
+    }
+    
+    #--counterDiv3 {
+        border-left: 3px solid $gold2;
+    }
+    
+    #--counterDiv4 {
+        border-left: 3px solid $gold2;
+        border-radius: 10px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    #--counterDiv1 {
+        border-bottom: 2px solid $gold0;
+        border-left: 2px solid $gold0;
+        
+    }
+    
+    #--counterDiv2 {
+        border-bottom: 2px solid $gold0;
+        
+    }
+
+    #--counterDiv3 {
+        border-left: 2px solid $gold0;
+        padding-top: 15px !important;
+    }
+
+    #--counterDiv4 {
+        padding-top: 15px !important;
+    }
+}
+
+
+
+/*************** businesses under the holding ***************/
+.--divBusinessess {
+    // box-shadow: 0px 2px 4px $gold0, 0px 7px 13px -3px $gold1, inset 0px 4px 0px $gold2;
+    // box-shadow: 0.5rem 0.5rem $gold1, -0.5rem -0.5rem $gold2;
+    box-shadow:
+    0 2.8px 2.2px  $gold0,
+    0 6.7px 5.3px  $gold0,
+    0 12.5px 10px $gold0,
+    0 22.3px 17.9px  $gold0,
+    0 41.8px 33.4px  $gold0,
+    0 100px 80px $gold0;
+    transform: skew(0def);
+}
+
+.--content p {
+    text-align: justify;
+}
+
+@keyframes shake {
+    0% {
+      transform: skewY(20deg);
+    }
+    50% {
+      transform: skewY(-20deg);
+    }
+    100% {
+        transform: skewY(0deg);
+    }
+}
+
+.--animate-on-scroll {
+    opacity: 0;
+    transition: opacity 2s;
+    overflow: hidden;
+}
+
+.--animate-on-scroll.visible {
+    opacity: 1;
+}
+
+.--animate-on-scroll .--businessImgsWebsite {
+    transition: transform 1s ease-out;
+}
+
+.--animate-on-scroll div:hover .--businessImgsWebsite{
+    transform: scale(1.1);
+}
+
+/*************** brand of businesses ***************/
+#--bransOfBusinesse1 {
+    animation: float1 4s infinite ease-in-out;
+}
+
+#--bransOfBusinesse2 {
+    animation: float2 4s infinite ease-in-out;
+}
+
+#--bransOfBusinesse3 {
+    animation: float3 4s infinite ease-in-out;
+}
+
+#--bransOfBusinesse4 {
+    animation: float4 4s infinite ease-in-out;
+}
+
+@keyframes float1 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes float3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes float4 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+#--bransOfBusinesse1, #--bransOfBusinesse2, #--bransOfBusinesse3, #--bransOfBusinesse4 {
+    width: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    #--bransOfBusinesse1, #--bransOfBusinesse2, #--bransOfBusinesse3, #--bransOfBusinesse4 {
+        width: 80px;
+    }
+}
+
+
+
+/*************** instagram pages ***************/
+#--profilePhone {
+    color: $gold0;
+}
+
+#--profilePhone:hover {
+    text-decoration: underline !important;
+}
+
+.--instaImgs img {
+    border: 5px solid $gold1;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.--instaImgs img.visible {
+    opacity: 1;
+}
+
+.--profileContent {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.--profileContent.visible {
+    opacity: 1;
+}
+
+#--profileId a:hover {
+    text-decoration: underline !important;
+    color: $gold2 !important;
+}
+
+.--h2sTitles {
+    font-size: 230%;
+    color: $gold1;
+}
+
+/*************** about us ***************/
+#--contactUs2Div {
+    background: $gold;
+    box-shadow: 8.0px 16.0px 16.0px hsla(0, 7%, 67%, 0.25);
+}
+
+#--contactUs1Div {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#--contactUs1Div.visible {
+    opacity: 1;
+}
+
+#--supportMail a{
+    color: $gold1;
+}
+
+#--goTopImg {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#--goTopImg.visible {
+    opacity: 1;
+}
+
+#--hrBetweenContactUsAndFooter {
+    height: 30px;
+    border:none;
+    width: 90%;
+    border-bottom: 1px solid $gold1;
+    box-shadow: 0 10px 10px -10px $gold0;
+}
+
+
+/*************** footer ***************/
+.--footerImpos {
+    color: $gold0;
+    cursor: pointer;
+}

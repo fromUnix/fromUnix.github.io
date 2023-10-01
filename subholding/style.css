@@ -1,0 +1,338 @@
+/* color variables */
+@font-face {
+  font-family: manshoor;
+  src: url("font/manshoor/Statics/Manshoor-Black.ttf") format("ttf"), url("font/manshoor/Statics/Manshoor-Bold.ttf") format("ttf"), url("font/manshoor/Statics/Manshoor-Heavy.ttf") format("ttf"), url("font/manshoor/Statics/Manshoor-Medium.ttf") format("ttf"), url("font/manshoor/Statics/Manshoor-SemiBold.ttf") format("ttf"), url("font/manshoor/Statics/woff2/Manshoor-Black.woff2") format("woff2"), url("font/manshoor/Statics/woff2/Manshoor-Bold.woff2") format("woff2"), url("font/manshoor/Statics/woff2/Manshoor-ExtraBold.woff2") format("woff2"), url("font/manshoor/Statics/woff2/Manshoor-Medium.woff2") format("woff2"), url("font/manshoor/Statics/woff2/Manshoor-SemiBold.woff2") format("woff2"); }
+@font-face {
+  font-family: hamrah;
+  src: url("font/hamrah/Hamrah.ttf") format("ttf"), url("font/hamrah/Hamrah.woff2") format("woff2"); }
+@font-face {
+  font-family: nimkat;
+  src: url("font/Nimkat/Nimkat-Medium [@ClubEdits].otf") format("otf"), url("font/Nimkat/Nimkat-Medium [@ClubEdits].ttf") format("ttf"), url("font//Nimkat/Nimkat-Medium [@ClubEdits].woff") format("woff"), url("font/Nimkat/Nimkat-Medium [@ClubEdits].woff2") format("woff2"); }
+@font-face {
+  font-family: iranyeks;
+  src: url("font/IRANYekan/AnyConv.com__IRANYekan-Bold [@ClubEdits].woff") format("woff"), url("font/IRANYekan/AnyConv.com__IRANYekan-Medium [@ClubEdits].woff") format("woff"), url("font/IRANYekan/AnyConv.com__IRANYekanRegular [@ClubEdits].woff") format("woff"), url("font/IRANYekan/IRANYekan-Bold [@ClubEdits].ttf") format("ttf"), url("font/IRANYekan/IRANYekan-Black [@ClubEdits].ttf") format("ttf"), url("font/IRANYekan/IRANYekan-Medium [@ClubEdits].ttf") format("ttf"), url("font/IRANYekan/IRANYekan-Bold [@ClubEdits].woff2") format("woff2"); }
+@font-face {
+  font-family: hamta;
+  src: url("font/hamta/Hamta [@ClubEdits].ttf") format("ttf"), url("font/hamta/AnyConv.com__Hamta [@ClubEdits].woff") format("woff"); }
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+  border-left: 5px solid;
+  border-image-source: linear-gradient(#e5b06a, #d0985a, #a06339) !important;
+  border-image-slice: 1;
+  scroll-behavior: smooth;
+  font-family: iranyeks !important;
+  overflow-x: hidden;
+  /***** scrollbar - only for chromium ****/ }
+  html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+    width: 3px;
+    background: black; }
+  html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: linear-gradient(#e5b06a, #d0985a, #a06339); }
+
+/*************** nav ***************/
+#--nav {
+  background-color: black;
+  font-size: 30px;
+  font-family: hamrah !important; }
+
+#--navUi {
+  padding: 0;
+  margin: 0; }
+
+#--navUi li {
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+  cursor: pointer; }
+
+#--navUi li::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e5b06a, #d0985a, #a06339);
+  transition: top 0.3s; }
+
+#--navUi li:hover::before {
+  top: -15%;
+  z-index: -1; }
+
+#--navUi li:hover a {
+  color: black !important; }
+
+/**** for small screens ***/
+#--smallScMenu {
+  background: #e5b06a; }
+
+#--appearingSmallMenu {
+  background: linear-gradient(#e5b06a, #d0985a, #a06339);
+  transition: all 1s;
+  right: -100%;
+  border-bottom-left-radius: 50px;
+  height: 370px;
+  width: 250px; }
+
+#--smallScMenuImg {
+  transition-delay: .3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: transparent; }
+
+#--smallScMenuImg.active {
+  background-color: #f2f1f1 !important;
+  opacity: 0.8; }
+
+.rotate180 {
+  transform: rotate(180deg); }
+
+#--navSmallSc {
+  font-size: 20px;
+  background-color: black;
+  height: 350px;
+  width: 250px;
+  border-bottom-left-radius: 50px; }
+
+#--navSmallSc ul li a {
+  background: linear-gradient(#e5b06a, #d0985a, #a06339);
+  border-radius: 15px; }
+
+#--navSmallSc ul li:focus a {
+  background-color: #dbd4d4; }
+
+#--navSmallSc ul li a {
+  color: black !important; }
+
+/*************** about us ***************/
+@media only screen and (max-width: 630px) {
+  #--aboutUsText {
+    font-size: 16px !important; } }
+h1 {
+  font-family: hamta !important;
+  transition: all .5s;
+  font-size: 25vh !important; }
+
+h1:hover {
+  color: #e5b06a !important; }
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 20vh !important; } }
+@media only screen and (min-width: 630px) {
+  #--mainImg {
+    margin-top: 145px; } }
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 15vh !important; }
+
+  #--mainImg {
+    margin-top: 120px; } }
+@media only screen and (max-width: 530px) {
+  h1 {
+    font-size: 8vh !important; }
+
+  #--mainImg {
+    margin-top: 0px; } }
+#--aboutUsText {
+  font-size: 25px;
+  text-align: justify; }
+
+h1 span {
+  color: #e5b06a;
+  transition: all .5s; }
+
+h1:hover span {
+  color: white !important; }
+
+#--3Dots {
+  color: #e5b06a;
+  cursor: pointer; }
+
+#--goDown {
+  width: 70px;
+  height: 45px;
+  cursor: pointer; }
+
+/*************** counter ***************/
+.--counterH4s {
+  color: #e5b06a; }
+
+#--counter1, #--counter2, #--counter3, #--counter4 {
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Moirai One', cursive;
+  font-size: 70px; }
+
+@media only screen and (min-width: 770px) {
+  #--counterDiv1 {
+    border-right: 3px solid #a06339;
+    border-radius: 10px; }
+
+  #--counterDiv2 {
+    border-left: 3px solid #a06339;
+    border-right: 3px solid #a06339; }
+
+  #--counterDiv3 {
+    border-left: 3px solid #a06339; }
+
+  #--counterDiv4 {
+    border-left: 3px solid #a06339;
+    border-radius: 10px; } }
+@media only screen and (max-width: 770px) {
+  #--counterDiv1 {
+    border-bottom: 2px solid #e5b06a;
+    border-left: 2px solid #e5b06a; }
+
+  #--counterDiv2 {
+    border-bottom: 2px solid #e5b06a; }
+
+  #--counterDiv3 {
+    border-left: 2px solid #e5b06a;
+    padding-top: 15px !important; }
+
+  #--counterDiv4 {
+    padding-top: 15px !important; } }
+/*************** businesses under the holding ***************/
+.--divBusinessess {
+  box-shadow: 0 2.8px 2.2px #e5b06a, 0 6.7px 5.3px #e5b06a, 0 12.5px 10px #e5b06a, 0 22.3px 17.9px #e5b06a, 0 41.8px 33.4px #e5b06a, 0 100px 80px #e5b06a;
+  transform: skew(0def); }
+
+.--content p {
+  text-align: justify; }
+
+@keyframes shake {
+  0% {
+    transform: skewY(20deg); }
+  50% {
+    transform: skewY(-20deg); }
+  100% {
+    transform: skewY(0deg); } }
+.--animate-on-scroll {
+  opacity: 0;
+  transition: opacity 2s;
+  overflow: hidden; }
+
+.--animate-on-scroll.visible {
+  opacity: 1; }
+
+.--animate-on-scroll .--businessImgsWebsite {
+  transition: transform 1s ease-out; }
+
+.--animate-on-scroll div:hover .--businessImgsWebsite {
+  transform: scale(1.1); }
+
+/*************** brand of businesses ***************/
+#--bransOfBusinesse1 {
+  animation: float1 4s infinite ease-in-out; }
+
+#--bransOfBusinesse2 {
+  animation: float2 4s infinite ease-in-out; }
+
+#--bransOfBusinesse3 {
+  animation: float3 4s infinite ease-in-out; }
+
+#--bransOfBusinesse4 {
+  animation: float4 4s infinite ease-in-out; }
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-20px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes float2 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes float3 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes float4 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+#--bransOfBusinesse1, #--bransOfBusinesse2, #--bransOfBusinesse3, #--bransOfBusinesse4 {
+  width: 120px; }
+
+@media only screen and (max-width: 600px) {
+  #--bransOfBusinesse1, #--bransOfBusinesse2, #--bransOfBusinesse3, #--bransOfBusinesse4 {
+    width: 80px; } }
+/*************** instagram pages ***************/
+#--profilePhone {
+  color: #e5b06a; }
+
+#--profilePhone:hover {
+  text-decoration: underline !important; }
+
+.--instaImgs img {
+  border: 5px solid #d0985a;
+  opacity: 0;
+  transition: all 1s; }
+
+.--instaImgs img.visible {
+  opacity: 1; }
+
+.--profileContent {
+  opacity: 0;
+  transition: all 1s; }
+
+.--profileContent.visible {
+  opacity: 1; }
+
+#--profileId a:hover {
+  text-decoration: underline !important;
+  color: #a06339 !important; }
+
+.--h2sTitles {
+  font-size: 230%;
+  color: #d0985a; }
+
+/*************** about us ***************/
+#--contactUs2Div {
+  background: linear-gradient(#e5b06a, #d0985a, #a06339);
+  box-shadow: 8px 16px 16px rgba(177, 165, 165, 0.25); }
+
+#--contactUs1Div {
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#--contactUs1Div.visible {
+  opacity: 1; }
+
+#--supportMail a {
+  color: #d0985a; }
+
+#--goTopImg {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#--goTopImg.visible {
+  opacity: 1; }
+
+#--hrBetweenContactUsAndFooter {
+  height: 30px;
+  border: none;
+  width: 90%;
+  border-bottom: 1px solid #d0985a;
+  box-shadow: 0 10px 10px -10px #e5b06a; }
+
+/*************** footer ***************/
+.--footerImpos {
+  color: #e5b06a;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
